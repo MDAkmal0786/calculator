@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+  <title>akmal</title>
+
+  <style>
+
+.calculator
+{
+   border: 1px solid rgb(173, 172, 172) ;
+   width: 250px;
+   
+   border-radius: 10px;
+}
+.bar
+{
+  font-size: 40px; /* height in bar = font weight  read only*/ 
+  width: 88%;
+  margin: 10px;
+ 
+}
+.button
+{
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.container
+{
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   flex-wrap: wrap;
+}
+.class
+{
+  display: flex;
+  justify-content: center;
+}
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <div class="class">
+
+   <div class="calculator" >
+
+ <input type="text" class="bar" readonly  >
+
+ <div class="container">
+
+   <button class="button" onclick="  output+='1'; document.querySelector('input').value=output" > 1</button>
+   
+   <button class="button"  onclick="  output+='2'; document.querySelector('input').value=output" >2</button>
+   
+   <button class="button"  onclick="  output+='3'; document.querySelector('input').value=output" >3</button>
+
+   <button class="button"  onclick="  output+='4'; document.querySelector('input').value=output" >4</button>
+   
+   <button class="button" onclick="  output+='5'; document.querySelector('input').value=output" >5</button>
+   
+   <button class="button"  onclick="  output+='6'; document.querySelector('input').value=output" >6</button>
+
+   <button class="button"  onclick="  output+='7'; document.querySelector('input').value=output" >7</button>
+   
+   <button class="button"  onclick="  output+='8'; document.querySelector('input').value=output" >8</button>
+   
+   <button class="button"  onclick="  output+='9'; document.querySelector('input').value=output" >9</button>
+
+   <button class="button"  onclick="  output+='.'; document.querySelector('input').value=output" >.</button>
+   
+   <button class="button"  onclick="  output+='0'; document.querySelector('input').value=output" >0</button>
+   
+   <button class="button"  onclick="  output=eval(output) ; document.querySelector('input').value=output" >=</button>
+   
+   <button class="button"  onclick="  output=''; document.querySelector('input').value=output" >CLEAR</button>
+   
+   <button class="button" onclick="  output+='/'; document.querySelector('input').value=output" >/</button>
+   
+   <button class="button" onclick="  output+='*'; document.querySelector('input').value=output" >*</button>
+
+   <button class="button" onclick="  output+='-'; document.querySelector('input').value=output" >-</button>
+     
+   <button class="button" onclick="  output+='+'; document.querySelector('input').value=output" >+</button>
+   
+   </div>
+   </div>
+   </div>
+
+
+  <script>
+   let output= ''
+   document.querySelector('input').value=output;
+  </script>
+
+
+</body>
+
+
+</html>
+
